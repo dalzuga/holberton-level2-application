@@ -101,11 +101,55 @@
 	to <i>lock</i> and <i>unlock</i>. The public key can
 	only <i>lock</i>.</p>
 
-	<p>Your private key can be found at </p>
+	<p>If you don't have these, don't worry, that just means you
+	need to generate them. The folllowing section shows you
+	how.</p>
 
 	<h2>Generating keys</h2>
 
-	<p>First, we create a private key. Then, we can generate *a* public key from the private key</p>
+	<p>First, we create a private key. Then, we generate a public
+	key from the private key. The following command will do
+	both.</p>
+
+	<pre>ssh-keygen -t rsa</pre>
+
+	<p></p>
+	<p>At each prompt, just leave blank and press Enter. Now you
+	have your pair of private and public keys!</p>
+
+	<h2>Using your keys with your server</h2>
+
+	<p>Now that you have generated your keys, you can put them to use.</p>
+	
+	<p>Your private key can be found in the local ~/.ssh/
+	directory. cd into it, and run ls. Your private key will be
+	called id_rsa. Your public key is there as well, called
+	id_rsa.pub.</p>
+
+	<p>Open up another terminal (let's call it terminal 2), and
+	log in to your remote server. Personally, I will log in to my
+	remote Windows PC with Cygwin installed, but these commands
+	work on Linux as well.</p>
+
+	<p>First, on terminal 2, cd into the remote server's ~/.ssh
+	directory. If it doesn't exist, use mkdir to make it. In this
+	directory, we will create a file called 'authorized_keys'. To
+	do this, run the following command</p>
+
+	<pre>emacs authorized_keys</pre>
+
+	<p>This is where your public key will go (follow the steps
+	below). Remember, this will allow you to log in to your remote
+	server without a password, so make sure no one has stealthily
+	installed another key in there (make sure the file is
+	blank). Keep emacs open.</p>
+
+	<p>On terminal 1, cd into your local ~/.ssh directory. Run
+	emacs, copy the contents of the public key file (id_rsa.pub)
+	onto the file in terminal 2, and save it. Yes, good ol' copy
+	and paste. :)</p>
+
+	<p>You are done. You can now login without a password!</p>
 
 	<h3>Resources</h3>
 
