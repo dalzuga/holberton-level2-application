@@ -14,9 +14,9 @@ main {
 pre {
     background: #eee;
     font-family: Courier, 'New Courier', monospace;
-    line-height: 2;
+    line-height: 1.5;
     margin-bottom: 1em;
-    padding: 1em;
+    padding: .5em;
 }
 
 article {
