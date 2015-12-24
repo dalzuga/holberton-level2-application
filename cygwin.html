@@ -49,7 +49,7 @@
 
 	<p>On my MacBook Air with OS X El Capitan 10.11, I modified my
 	  '.bash_profile' file. The file can be accessed with Emacs with
-	  the following command</p>
+	  the following command:</p>
 
 	<pre>emacs ~/.bash_profile</pre>
 
@@ -61,7 +61,7 @@
 	  called '.bashrc' using Emacs. The command to do this is as
 	  follows:</p>
 
-	<p>emacs ~/.bashrc</p>
+	<pre>emacs ~/.bashrc</pre>
 
 	<h3>My bash aliases</h3>
 
@@ -84,10 +84,10 @@
 	      to the Holberton server. There is way to avoid the
 	      password altogether using SSH keys!</p>
 
-	<p><strike>I got an SSH key I generated to work with my computer at
+	<p><del>I got an SSH key I generated to work with my computer at
 	      home, but I spent way too much time doing this and so I
 	      am pressed for time to finish the challenge and won't be
-	      able to explain it at this point.</strike></p>
+	      able to explain it at this point.</del></p>
 
 	<p><b>The Secure SHell (SSH) can work with different encryption
 	types. The one we will use is RSA.</b></p>
@@ -113,7 +113,7 @@
 
 	<pre>ssh-keygen -t rsa</pre>
 
-	<p></p>
+<!--	<p></p> !-->
 	<p>At each prompt, just leave blank and press Enter. Now you
 	have your pair of private and public keys!</p>
 
@@ -134,9 +134,9 @@
 	<p>First, on terminal 2, cd into the remote server's ~/.ssh
 	directory. If it doesn't exist, use mkdir to make it. In this
 	directory, we will create a file called 'authorized_keys'. To
-	do this, run the following command</p>
+	do this, run the following command:</p>
 
-	<pre>emacs authorized_keys</pre>
+	<pre>emacs authorized_keys</pre><p></p>
 
 	<p>This is where your public key will go (follow the steps
 	below). Remember, this will allow you to log in to your remote
@@ -149,7 +149,8 @@
 	onto the file in terminal 2, and save it. Yes, good ol' copy
 	and paste. :)</p>
 
-	<p>You are done. You can now login without a password!</p>
+	<p>You are done. You can now log into your server without a
+	password!</p>
 
 	<h2>Post Scriptum</h2>
 
@@ -157,8 +158,8 @@
 	private key already but you either lost your public key or
 	never had it in the first place. Turns out you can generate a
 	private key from a public key by specifying the -y option on
-	ssh-keygen. Run 'man ssh-keygen' at your nearest terminal for
-	more.</p>
+	ssh-keygen. Run 'man ssh-keygen' for information on how to do
+	this.</p>
 
 	<h3>Resources</h3>
 
@@ -166,6 +167,8 @@
 	<pre>http://getgrav.org/blog/mac-os-x-apache-setup-multiple-php-versions</pre>
 	<pre>https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2</pre>
 	<pre>http://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key</pre>
+	<pre>https://perishablepress.com/perfect-pre-tags/</pre>
+	<pre>http://www.w3schools.com/cssref/css_units.asp</pre>
 
 	<h3>Back to the <a href="index.html">index</a>.</h3>
 

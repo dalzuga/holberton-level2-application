@@ -11,6 +11,14 @@ main {
     flex: auto;
 }
 
+pre {
+    background: #eee;
+    font-family: Courier, 'New Courier', monospace;
+    line-height: 2;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
 article {
     flex: 2;
     overflow-y: auto;
