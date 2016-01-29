@@ -48,7 +48,7 @@
       <tr> <!-- row for description -->
 	<td style="background-color: #ffffff; border-top: 0px solid #000000; text-align: left; height: 50px;" align="center">
 	  <p>
-	    <span style="margin-bottom: 10px; font-seize: 12px; font-weight: normal; color: #494a48; font-family: arial; line-height: 110%;">
+	    <span style="margin-bottom: 0px; font-seize: 12px; font-weight: normal; color: #494a48; font-family: arial; line-height: 110%;"> <!-- margin-bottom used to be 10px -->
 	      These days pets are increasingly being considered members of the family. As people are having children later in life, the focus on ones career brings pets into the scene. These pets are often cherished as much as children and their quality of life is a top priority in the minds of their owners. This regard for animal welfare, along with the design savvy culture we live in, has influenced pet photography as well as the pet industry in general.This showcase portrays how good design and aesthetics can change our perception of pet photography. Enjoy!
 	    </span>
 	  </p>
