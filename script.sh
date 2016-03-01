@@ -3,7 +3,7 @@
 #cat ~/.ssh/id_rsa.pub
 #open https://github.com/settings/ssh
 
-PS1="\[\e[0;36m\]\h\[\e[m\]:\W \[\e[34m\]\u\[\e[m\]\[\e[31m\]\$\[\e[m\] "
+echo 'PS1="\[\e[0;36m\]\h\[\e[m\]:\W \[\e[34m\]\u\[\e[m\]\[\e[31m\]\$\[\e[m\] "' >> ~/.bash_profile
 
 git config --global user.name "Daniel Alzugaray"
 git config --global user.email "dalzuga@gmail.com"
